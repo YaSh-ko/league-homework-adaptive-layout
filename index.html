@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивный макет</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <section class="culture">
+
+    <!-- 1. Заголовок -->
+    <header class="culture__title">
+      <h1>Company<br>Culture</h1>
+      <!-- <div class="social">
+        <svg viewBox="0 0 24 24"><path d="..."/></svg>
+        <svg viewBox="0 0 24 24"><path d="..."/></svg>
+        <svg viewBox="0 0 24 24"><path d="..."/></svg>
+      </div> -->
+    </header>
+
+    <!-- 2. Фото 1: Девушка в шляпе -->
+    <figure class="culture__photo1">
+      <picture>
+        <source
+          srcset="
+            images/pictures/woman-hat-green-bg-1x.webp 1x,
+            images/pictures/woman-hat-green-bg-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/woman-hat-green-bg-1x.webp"
+          alt="Девушка в шляпе на зелёном фоне"
+          loading="lazy"
+          width="300"
+          height="390"
+        />
+      </picture>
+    </figure>
+
+    <!-- 3. Фото 2: Смеющаяся девушка с кудрями -->
+    <figure class="culture__photo2">
+      <picture>
+        <source
+          srcset="
+            images/pictures/laughing-curly-girl-blue-bg-1x.webp 1x,
+            images/pictures/laughing-curly-girl-blue-bg-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/laughing-curly-girl-blue-bg-1x.webp"
+          alt="Смеющаяся девушка с кудрями на синем фоне"
+          loading="lazy"
+          width="300"
+          height="400"
+        />
+      </picture>
+    </figure>
+
+    <!-- 4. Фото 3: Девушка с букетом -->
+    <figure class="culture__photo3">
+      <picture>
+        <source
+          srcset="
+            images/pictures/girl-grey-dress-bouquet-1x.webp 1x,
+            images/pictures/girl-grey-dress-bouquet-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/girl-grey-dress-bouquet-1x.webp"
+          alt="Девушка в сером платье с букетом"
+          loading="lazy"
+          width="300"
+          height="400"
+        />
+      </picture>
+    </figure>
+
+    <!-- 5. Красный квадрат (декор) -->
+    <div class="culture__red"></div>
+
+    <!-- 6. Текстовый блок -->
+    <aside class="culture__footer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ultricies aliquam egestas amet mi aliquam. Eu, vel massa elementum nulla.</p>
+    </aside>
+
+    <!-- 7. Фото 4: Чашка кофе -->
+    <figure class="culture__coffee">
+      <picture>
+        <source
+          srcset="
+            images/pictures/coffee-cup-1x.webp 1x,
+            images/pictures/coffee-cup-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/coffee-cup-1x.webp"
+          alt="Чашка кофе сверху"
+          loading="lazy"
+          width="300"
+          height="150"
+        />
+      </picture>
+    </figure>
+
+    <!-- 5. Красный квадрат (декор) -->
+    <div class="culture__brown"></div>
+
+    <!-- 8. Фото 5: Пустая комната -->
+    <figure class="culture__room">
+      <picture>
+        <source
+          srcset="
+            images/pictures/empty-room-door-1x.webp 1x,
+            images/pictures/empty-room-door-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/empty-room-door-1x.webp"
+          alt="Пустая светлая комната с открытой дверью"
+          loading="lazy"
+          width="300"
+          height="150"
+        />
+      </picture>
+    </figure>
+
+    <!-- 9. Фото 6: Парень в профиль -->
+    <figure class="culture__man">
+      <picture>
+        <source
+          srcset="
+            images/pictures/man-profile-bw-1x.webp 1x,
+            images/pictures/man-profile-bw-2x.webp 2x
+          "
+          type="image/webp"
+          sizes="(min-width: 1200px) 300px, (min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          src="images/pictures/man-profile-bw-1x.webp"
+          alt="Парень в профиль, чёрно-белое фото"
+          loading="lazy"
+          width="300"
+          height="150"
+        />
+      </picture>
+    </figure>
+
+  </section>
+
+</body>
+</html>

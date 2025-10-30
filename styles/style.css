@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.culture {
+  display: grid;
+  grid-template:
+    "title  photo1 photo1 photo2 photo3" 40%
+    "title  photo1 photo1 room   red" 25%
+    "footer coffee brown  room   man" 35% / 34fr 15fr 13fr 18fr 19fr;
+  gap: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.culture__title   {
+  grid-area: title;
+  padding: 2rem;
+  background: #fff;
+}
+
+.culture__photo1  {
+  grid-area: photo1;
+}
+
+.culture__photo2  {
+  grid-area: photo2;
+}
+
+.culture__photo3  {
+  grid-area: photo3;
+}
+
+.culture__red     {
+  grid-area: red;
+  background: #c41e3a;
+}
+
+.culture__footer  {
+  grid-area: footer;
+  padding: 1.5rem;
+  color: #fff;
+  background: #5c6b7a;
+}
+
+.culture__coffee  {
+  grid-area: coffee;
+}
+
+.culture__brown     {
+  grid-area: brown;
+  background: brown;
+}
+
+.culture__room    {
+  grid-area: room;
+}
+
+.culture__man     {
+  grid-area: man;
+}
+
+
+.culture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.culture__photo1 img {
+  object-position: center top;
+}
+
+.culture__photo3 img {
+  object-position: center top;
+}
+
+.culture__room img {
+  object-position: center top;
+}
+
+.culture__man img {
+  object-position: center top;
+}
+
+
+@media(width <= 768px) {
+  .culture {
+    grid-template:
+      "title  photo1 photo1" 30%
+      "footer coffee brown" 20%
+      "photo2 photo3 photo3" 20%
+      "room red red" 13%
+      "room man man" 17% / 2.2fr 1fr 1fr;
+    min-height: 200dvh;
+  }
+
+  .culture__man img {
+    object-position: center 20%; /* ← КЛЮЧ: фокус на верх */
+  }
+}

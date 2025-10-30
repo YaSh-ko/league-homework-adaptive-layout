@@ -1,0 +1,27 @@
+{
+  "name": "league-homework-adaptive-layout",
+  "version": "1.0.0",
+  "description": "Верстка адаптивного макета по методологии БЭМ.",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaSh-ko/league-homework-adaptive-layout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaSh-ko/league-homework-adaptive-layout/issues"
+  },
+  "homepage": "https://github.com/YaSh-ko/league-homework-adaptive-layout#readme",
+  "devDependencies": {
+    "stylelint": "^16.25.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-order": "^7.0.0"
+  }
+}
